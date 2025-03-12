@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    body{
+        background: url(images7.jpg);
+        background-size: cover;
+    }
+        nav{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 70%;
+            background: rgba(255, 255, 255,0.5);
+            height: 40px;
+            border-radius: 10px;
+            animation: anim_nav linear 1s 1;
+        }
+        ul{
+            width: 100%;
+        }
+        ul li{
+            width: 25%;
+            float: left;
+            line-height: 40px;
+            cursor: pointer;
+            list-style: none;
+            text-align:center ;
+            transition: 1s;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        ul li:hover{
+            background: #561b04;
+            color: white;
+        }
+        section{
+            position: relative;
+            top: 100px;
+            width: 100%;
+        }
+        .welcome{
+            width: 600px;
+            height: 200px;
+            background: rgba(255, 255, 255,0.5);
+            margin: 0 2em;
+            animation: 2s linear 1 anim_Welcom;
+            display: inline-block;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .imgs{
+            width: 100%;
+        }
+        .imgs img{
+            width: 30%;
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 10px;
+    
+        }
+      
+        .imgs img:hover{
+            transform: scale(1.1);
+
+        }
+        
+        header{
+            float: left; 
+        }
+      
+    
+    @keyframes anim_nav {
+        0%{ margin-top: -100px;opacity: 0;}
+        100% {margin-top: 0px;opacity: 1;}
+        
+    }
+    @keyframes anim_Welcom {
+        0%{ margin-top: 100px;opacity: 0;}
+        100% {margin-top: 0px;opacity: 1;}
+        
+    }
+</style>    
+
+</head>
+
+<body>
+
+    <nav>
+            <ul> 
+                <li>Home</li>
+                <li><a href ="About.html">About us</a> </li>
+                <li><a href ="pr.html">promotion</a> </li>
+                <li><a href ="Co4.html">Contact</a> </li>
+            </ul>
+    </nav>
+
+    <section>
+        <div class="welcome">
+            <h1>Welcome To Our Coffee Shop ☕<i class="fas fa-mug-hot"></i></h1>
+            <div class="imgs">
+               <a href="Sweet.html"><img src="img1.jpg"></a>  
+               <a href="img2.html"><img src="img2.jpg"></a>
+            </div>
+
+    </section>
+
+</body>
+</html>
